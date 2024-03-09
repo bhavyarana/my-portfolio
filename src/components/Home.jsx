@@ -131,7 +131,7 @@ const Home = () => {
           </ul>
         </div>
         <Link to="home" smooth={true} duration={500}>
-          <div className="up-arrow fixed bottom-12 right-10 h-12 w-12 rounded-full dark:bg-[#6d6d6d81] bg-[#929292b6] cursor-pointer flex justify-center items-center hover:scale-110 duration-300 dark:hover:bg-[#6d6d6d] hover:bg-black">
+          <div className="up-arrow fixed bottom-12 right-10 h-12 w-12 rounded-full dark:bg-[#6d6d6d81] bg-[#929292b6] cursor-pointer flex justify-center items-center hover:scale-110 duration-300 dark:hover:bg-[#6d6d6d] hover:bg-black hidden">
             <BiSolidUpArrow className="text-2xl dark:text-[#202020] text-white z-10" />
           </div>
         </Link>
