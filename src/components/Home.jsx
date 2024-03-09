@@ -77,7 +77,7 @@ const Home = () => {
                   </li>
                   <li className="flex justify-between items-center bg-[#899db4] dark:bg-[#565f69] rounded-md  ">
                     <a
-                      href="#"
+                      href="https://drive.google.com/file/d/1_VSG_If3RXBJjmni_vted1IuLjJAfqPC/view?usp=sharing"
                       target="_blank"
                       className="flex justify-between items-center w-full p-3 "
                     >
@@ -121,7 +121,7 @@ const Home = () => {
             </li>
             <li className="flex justify-between items-center bg-[#565f69] ml-[-100px]  w-[160px] h-[60px] hover:ml-[-10px] duration-300">
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1_VSG_If3RXBJjmni_vted1IuLjJAfqPC/view?usp=sharing"
                 target="_blank"
                 className="flex justify-between items-center w-full px-5 text-base"
               >

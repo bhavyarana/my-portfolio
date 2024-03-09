@@ -19,8 +19,8 @@ const Projects = () => {
       techStack: ["React.js"],
       description:
         "My Food App integrates Swiggy's live API to dynamically render restaurants and their menus directly from Swiggy also integrated search and sort feature and also added cart to add dishes.",
-      liveLink: "https://bhavyatodo.netlify.app/",
-      codeLink: "https://github.com/bhavyarana/CheckList-App-React.js",
+      liveLink: "https://bhavyafood.netlify.app/",
+      codeLink: "https://github.com/bhavyarana/food-app",
     },
     {
       name: "Real-time Chat App",
@@ -31,8 +31,8 @@ const Projects = () => {
       techStack: ["React.js", "Sass", "Firebase"],
       description:
         "I built this responsive chat application with the help of firebase documentation enabling the users to engage in real-time conversations, share media, and seamlessly register or log in.",
-      liveLink: "https://bhavyatodo.netlify.app/",
-      codeLink: "https://github.com/bhavyarana/CheckList-App-React.js",
+      liveLink: "https://bhavyachat.netlify.app/",
+      codeLink: "https://github.com/bhavyarana/chat-app",
     },
     {
       name: "Checklist App",
