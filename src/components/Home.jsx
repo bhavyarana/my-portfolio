@@ -42,12 +42,55 @@ const Home = () => {
               </p>
               <span className="dark:bg-white dark:text-gray-800 bg-blue-500 text-white rounded-full p-2 w-32 flex justify-center items-center gap-2 text-bold cursor-pointer hover:scale-110 duration-200 mt-3">
                 <PiBagSimpleFill />
-                <p>Hire me</p>
+                <Link to="contact" smooth={true} duration={500}>
+                  <p>Hire me</p>
+                </Link>
               </span>
+              <div className=" text-white z-50  xl:hidden inline-block">
+                <ul className="flex gap-2 mt-10">
+                  <li className="flex justify-between items-center bg-blue-400 dark:bg-blue-600  rounded-md">
+                    <a
+                      href="https://www.linkedin.com/in/bhavya-rana-6a024417b/"
+                      target="_blank"
+                      className="flex justify-between items-center w-full p-3 "
+                    >
+                      <FaLinkedin className="text-2xl" />
+                    </a>
+                  </li>
+                  <li className="flex justify-between items-center bg-[#999999] dark:bg-[#333333] rounded-md  ">
+                    <a
+                      href="https://github.com/bhavyarana"
+                      target="_blank"
+                      className="flex justify-between items-center w-full p-3 "
+                    >
+                      <FaGithub className="text-2xl" />
+                    </a>
+                  </li>
+                  <li className="flex justify-between items-center bg-[#9ad4c8] dark:bg-[#6fc2b0] rounded-md   ">
+                    <a
+                      href="mailto:bhavya.rana10@gmail.com"
+                      target="_blank"
+                      className="flex justify-between items-center w-full p-3 "
+                    >
+                      <LuMail className="text-2xl" />
+                    </a>
+                  </li>
+                  <li className="flex justify-between items-center bg-[#899db4] dark:bg-[#565f69] rounded-md  ">
+                    <a
+                      href="#"
+                      target="_blank"
+                      className="flex justify-between items-center w-full p-3 "
+                    >
+                      Resume
+                      <IoDocumentText className="text-2xl" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div className="fixed top-[35%] left-0 text-white cursor-pointer z-50 mlginline-block hidden">
+        <div className="fixed top-[35%] left-0 text-white cursor-pointer z-50 mlginline-block hidden xl:inline-block">
           <ul>
             <li className="flex justify-between items-center bg-blue-600 ml-[-100px]    w-[160px] h-[60px] hover:ml-[-10px] duration-300">
               <a

@@ -32,9 +32,11 @@ const Navbar = () => {
       <header className="w-screen fixed bg-white dark:bg-[#1e1e1e] dark:text-white z-50">
         <nav className=" xl:flex justify-between items-center w-9/12 text-3xl p-3 mx-auto hidden">
           <div>
-            <h1 className="text-2xl dark:text-yellow-500 text-blue-500  text-bold">
-              Bhavya Rana
-            </h1>
+            <Link to="home" smooth={true} duration={500}>
+              <h1 className="text-2xl dark:text-yellow-500 text-blue-500  text-bold cursor-pointer">
+                Bhavya Rana
+              </h1>
+            </Link>
           </div>
           <div>
             <ul className="flex gap-10 ">
@@ -80,9 +82,12 @@ const Navbar = () => {
         </nav>
         <nav className=" xl:hidden  justify-between items-center w-screen text-3xl p-3 mx-auto flex flex-col gap-3">
           <div className="flex justify-between w-screen px-3">
-            <h1 className="text-xl dark:text-yellow-500 text-blue-500  text-bold">
-              Bhavya Rana
-            </h1>
+            <Link to="home" smooth={true} duration={500}>
+              <h1 className="text-xl dark:text-yellow-500 text-blue-500  text-bold cursor-pointer">
+                Bhavya Rana
+              </h1>
+            </Link>
+
             <div className="flex items-center justify-center gap-2">
               <div onClick={handleCLick} className="cursor-pointer">
                 {theme === "dark" ? (
