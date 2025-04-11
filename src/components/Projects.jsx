@@ -5,17 +5,35 @@ import portfolioLaptop from "../assets/portfolio-desktop.png";
 import portfolioMobile from "../assets/portfolio-mobile.png";
 import sitesGarageLaptop from "../assets/sites-garage-desktop.png";
 import sitesGarageMobile from "../assets/sites-garage-mobile.png";
+import ecommerceLaptop from "../assets/ecommerce-desktop.png";
+import ecommerceMobile from "../assets/ecommerce-mobile.png";
+import foodLaptop from "../assets/food-desktop.png";
+import foodMobile from "../assets/food-mobile.png";
+import dashboardLaptop from "../assets/dashboard-desktop.png";
+import dashboardMobile from "../assets/dashboard-mobile.png";
 import laptop from "../assets/laptop.png";
 import mobile from "../assets/mobile.png";
 
 const Projects = () => {
   const projectList = [
     {
+      name: "E-Gadgets Hub",
+      nameColor: "text-purple-400",
+      className: "ecommerce-app",
+      desktopImg: ecommerceLaptop,
+      mobileImg: ecommerceMobile,
+      techStack: ["React.js", "Node.js", "MongoDB"],
+      description:
+        "Developed a full-stack e-commerce site for purchasing electronic gadgets. Implemented secure backend APIs,dynamic product management, integrating Razorpay for secure payments. Implemented product listing, search,filtering",
+      liveLink: "https://bhavya-e-gadgets-hub.onrender.com/",
+      codeLink: "https://github.com/bhavyarana/E-Gadgets-HUB",
+    },
+    {
       name: "Food App using Swiggy’s live API",
       nameColor: "text-orange-400",
       className: "food-app",
-      desktopImg: laptop,
-      mobileImg: mobile,
+      desktopImg: foodLaptop,
+      mobileImg: foodMobile,
       techStack: ["React.js"],
       description:
         "My Food App integrates Swiggy's live API to dynamically render restaurants and their menus directly from Swiggy also integrated search and sort feature and also added cart to add dishes.",
@@ -23,28 +41,16 @@ const Projects = () => {
       codeLink: "https://github.com/bhavyarana/food-app",
     },
     {
-      name: "Real-time Chat App",
-      nameColor: "text-purple-400",
-      className: "chat-app",
-      desktopImg: laptop,
-      mobileImg: mobile,
-      techStack: ["React.js", "Sass", "Firebase"],
+      name: "Modern Admin Dashboard",
+      nameColor: "text-yellow-400",
+      className: "dashboard-app",
+      desktopImg: dashboardLaptop,
+      mobileImg: dashboardMobile,
+      techStack: ["React.js", "recharts", "Sass"],
       description:
-        "I built this responsive chat application with the help of firebase documentation enabling the users to engage in real-time conversations, share media, and seamlessly register or log in.",
-      liveLink: "https://bhavyachat.netlify.app/",
-      codeLink: "https://github.com/bhavyarana/chat-app",
-    },
-    {
-      name: "Checklist App",
-      nameColor: "text-blue-400",
-      className: "checklist-app",
-      desktopImg: checklistLaptop,
-      mobileImg: checklistMobile,
-      techStack: ["React.js"],
-      description:
-        "CheckList App is a modern, efficient task management application designed to boost productivity. Built with React.js, it offers a seamless, user-friendly experience.",
-      liveLink: "https://bhavyatodo.netlify.app/",
-      codeLink: "https://github.com/bhavyarana/CheckList-App-React.js",
+        "Designed a responsive and modern admin dashboard to visualize and manage business data. Focused on clean UI, modular components, and dynamic data rendering.",
+      liveLink: "https://bhavyaadmindashboard.netlify.app/",
+      codeLink: "https://github.com/bhavyarana/Modern-Admin-Dashboard",
     },
     {
       name: "Personal Portfolio",
@@ -70,6 +76,30 @@ const Projects = () => {
       liveLink: "https://sitesgarage.netlify.app/",
       codeLink: "https://github.com/bhavyarana/sites-garage",
     },
+    {
+      name: "Checklist App",
+      nameColor: "text-blue-400",
+      className: "checklist-app",
+      desktopImg: checklistLaptop,
+      mobileImg: checklistMobile,
+      techStack: ["React.js"],
+      description:
+        "CheckList App is a modern, efficient task management application designed to boost productivity. Built with React.js, it offers a seamless, user-friendly experience.",
+      liveLink: "https://bhavyatodo.netlify.app/",
+      codeLink: "https://github.com/bhavyarana/CheckList-App-React.js",
+    },
+    {
+      name: "Real-time Chat App",
+      nameColor: "text-green-400",
+      className: "chat-app",
+      desktopImg: laptop,
+      mobileImg: mobile,
+      techStack: ["React.js", "Sass", "Firebase"],
+      description:
+        "I built this responsive chat application with the help of firebase documentation enabling the users to engage in real-time conversations, share media, and seamlessly register or log in.",
+      liveLink: "https://bhavyachat.netlify.app/",
+      codeLink: "https://github.com/bhavyarana/chat-app",
+    },
   ];
   return (
     <>
@@ -82,7 +112,7 @@ const Projects = () => {
             My Projects
           </h1>
           <div className="flex justify-center items-center flex-col lg:w-[70%]  gap-32">
-            {projectList.map((project) => {
+            {projectList.map((project, index) => {
               const {
                 name,
                 nameColor,
@@ -96,6 +126,7 @@ const Projects = () => {
               } = project;
               return (
                 <div
+                  key={index}
                   className={`${className} w-full h-auto flex justify-between items-center lg:flex-row flex-col-reverse gap-6 lg:gap-0`}
                 >
                   <div>
@@ -114,9 +145,12 @@ const Projects = () => {
                           {name}
                         </h1>
                         <div className="flex gap-2 ">
-                          {techStack.map((tech) => {
+                          {techStack.map((tech, i) => {
                             return (
-                              <div className="px-3 py-1 rounded-full dark:bg-[#383838] bg-[#e7ebff] mb-4">
+                              <div
+                                className="px-3 py-1 rounded-full dark:bg-[#383838] bg-[#e7ebff] mb-4"
+                                key={i}
+                              >
                                 {tech}
                               </div>
                             );

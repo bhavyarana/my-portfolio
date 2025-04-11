@@ -15,6 +15,9 @@ import vitejs from "../assets/vitejs.svg";
 import npm from "../assets/npm.png";
 import photoshop from "../assets/photoshop.png";
 import reactrouter from "../assets/react router.png";
+import nodejs from "../assets/nodejs.png";
+import express from "../assets/express.png";
+import mongodb from "../assets/mongodb.png";
 
 const Skills = () => {
   const skills = [
@@ -26,6 +29,9 @@ const Skills = () => {
     tailwind,
     bootstrap,
     sass,
+    nodejs,
+    express,
+    mongodb,
     git,
     github,
     vitejs,
@@ -49,14 +55,11 @@ const Skills = () => {
           <div className="flex items-center justify-center flex-wrap h-auto lg:w-[80%] w-full  p-4  lg:gap-5 gap-3 ">
             {skills.map((skill, index) => {
               return (
-                <>
-                  <div
-                    key={index}
-                    className="lg:h-[130px] lg:w-[200px] h-[100px] w-[130px] dark:bg-[#282828] bg-[#e0e0e0] flex justify-center items-center rounded  hover:scale-110 duration-500"
-                  >
+                <div key={index}>
+                  <div className="lg:h-[130px] lg:w-[200px] h-[100px] w-[130px] dark:bg-[#282828] bg-[#e0e0e0] flex justify-center items-center rounded  hover:scale-110 duration-500">
                     <img src={skill} alt={skill + "logo"} className="w-[40%]" />
                   </div>
-                </>
+                </div>
               );
             })}
           </div>
