@@ -123,7 +123,7 @@ const Home = () => {
             </li>
             <li className="flex justify-between items-center bg-[#565f69] ml-[-100px]  w-[160px] h-[60px] hover:ml-[-10px] duration-300">
               <a
-                href="https://drive.google.com/file/d/1_VSG_If3RXBJjmni_vted1IuLjJAfqPC/view?usp=sharing"
+                href="https://drive.google.com/file/d/1yFq3mcb2nwDJo7hsmMjyRrc030lhfilc/"
                 target="_blank"
                 className="flex justify-between items-center w-full px-5 text-base"
               >
