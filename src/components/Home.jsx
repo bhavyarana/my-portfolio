@@ -79,7 +79,7 @@ const Home = () => {
                   </li>
                   <li className="flex justify-between items-center bg-[#899db4] dark:bg-[#565f69] rounded-md  ">
                     <a
-                      href="https://drive.google.com/file/d/1z5J1j-iVpN8H9UAlF-O5BmL2s9JlUU4w/"
+                      href="https://drive.google.com/file/d/1yFq3mcb2nwDJo7hsmMjyRrc030lhfilc/"
                       target="_blank"
                       className="flex justify-between items-center w-full p-3 "
                     >
